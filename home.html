@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dimtech</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+
+<body>
+ 
+
+<div class="container">
+
+  <div class="side-1">
+    <div class="header">
+     <h1>Dimtech</h1>
+     <p class="h-sec" style="margin-top: -29%; margin-bottom: 20%; font-size: 7px;">The Power of Dimensional Technologies</p>
+  <h2 class="h-main">Hi,</h2>
+      <h2 class="h-main">Welcome on Dimtech!</h2>
+      <p class="h-sec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper laoreet placerat. Nullam semper auctor justo, rutrum posuere odio vulputate nec.</p>
+      <button class="toggle-log">LEARN MORE</button>
+    </div>
+  </div>
+
+  <div class="forms">
+    <div class="sign-up">
+      <div class="form">
+        <fieldset class="block">
+          <h2 class="form-h">Sign-in</h2>
+          <div class="log-buttons"><a class="log-btn log-fb" href="#"></a><a class="log-btn log-gp" href="#"></a><a class="log-btn log-li" href="#"></a></div>
+          <form action="">
+            <input class="input-text" placeholder="Email" email="email" type="email"/>
+         
+            <input class="input-text" placeholder="Password" password="password" type="password"/>
+            <input class="input-submit" type="submit" value="LOGIN"/>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+
+    <div class="sign-in">
+      <div class="form">
+        <fieldset>
+         <form action="">
+         	<div class="form-h">Sign-in</div>
+            <input class="input-text" placeholder="E-mail" email="email" type="email"/>
+            <input class="input-text" placeholder="Password" type="password"/>
+             
+          <input id="keep" name="keep" type="checkbox" value="1" />
+          <label for="keep">Keep me logged</label>
+
+       <a href="forgot.html" style="color: white;margin-left: 16%; text-decoration: none; font-size: 0.4rem;">Forgot your password?</a>
+
+  <input class="input-submit" type="submit" value="LOGIN"/>
+
+  <a href="#" style="color: white; text-decoration: none; font-size: 0.4rem; margin-left: -17%;">Need an account ?</a> 
+
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+const side1 = $(".side-1");
+const signInF = $(".sign-in fieldset");
+const signUpF = $(".sign-up fieldset");
+$(".side-1 .toggle-log").click(function () {
+  side1.css({ transform: "rotateY(180deg)", "background-position": "100%" });
+  side2.css({ transform: "rotateY(0deg)", "background-position": "100%" });
+  signInF.attr("disabled", "disable");
+  signInF.addClass("block");
+  signUpF.removeAttr("disabled");
+  signUpF.removeClass("block");
+});
+$(".side-2 .toggle-log").click(function () {
+  side1.css({ transform: "rotateY(0deg)", "background-position": "0%" });
+  side2.css({ transform: "rotateY(-180deg)", "background-position": " 0%" });
+  signInF.removeAttr("disabled");
+  signInF.removeClass("block");
+  signUpF.attr("disabled", "disable");
+  signUpF.addClass("block");
+});
+
+</script>
+
+
+</html>
+</body>
