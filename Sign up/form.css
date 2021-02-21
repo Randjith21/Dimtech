@@ -1,0 +1,272 @@
+/* * * * * General CSS * * * * */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+
+/* * * * * Dimtech * * * * */
+
+h1 {
+  font-size: 1.83rem;
+  color: white;
+  line-height: 2px;
+ 
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+/* * * * * Why we need these information ? * * * * */
+h2 {
+  margin-top: 4%;
+  font-size: 30px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 18px;
+  color: white;
+}
+
+
+.col-left,
+.col-right {
+  width: 50%;
+  padding: 45px 35px;
+  display: flex;
+}
+
+/* * * * * coté gauche (bleu) * * * * */
+.col-left {
+ width: 40%;
+ background: #4A00E0;
+  
+}
+
+
+/* * * * * champs * * * * */
+.input-text {
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  background: #4e598c2b;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Poppins-Regular;
+  color: #fff;
+  width: 61%;
+  height: 45px;
+  background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+   position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 30px;
+}
+
+/* * * * * NEXT * * * * */
+
+a {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 1%;
+  width: 8rem;
+
+}
+a:hover {
+  color: #FC6C5F;
+}
+
+
+@media(max-width: 1175.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+
+
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+
+
+
+/*Form*/
+#msform {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  margin-right: 12%;
+  margin-top: 4%;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 10%;
+  position: absolute;
+}
+
+
+
+/*(2) Year*/
+#msform select{
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  font-size: 13px;
+}
+
+
+
+/*Placeholder*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  font-size: 13px;
+}
+
+/*button NEXT*/
+#msform .action-button {
+  width: 100px;
+  background: #FC6C5F;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  float: left;
+  border-radius: 2rem;
+  transition: 200ms;
+  margin-top: 5%;
+
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px #FC6C5F;
+}
+
+
+/*1 - 2 - 3*/
+#progressbar {
+  margin-bottom: 12px;
+  overflow: hidden;
+  /*counters to number the steps*/
+  counter-reset: step;
+
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 4.5rem;
+  float: left;
+  position: relative;
+  width: 32%;
+  margin-top: 3%;
+
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 3rem;
+  line-height: 3rem;
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  border-radius: 10rem;
+  margin: 0 auto 5px auto;
+  margin-top: -8%;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 6rem;
+  height: 0.2rem;
+  background: #F4F4F4;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+  
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+
+
+}
+
+/*The number of the step and the connector*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #FC6C5F;
+  color: white;
+  text-align: center;
+
+}

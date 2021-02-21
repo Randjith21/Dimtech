@@ -1,0 +1,268 @@
+/* * * * * General CSS * * * * */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 233vh;
+  font-family: sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+
+/* * * * * Dimtech * * * * */
+
+h1 {
+  font-size: 1.83rem;
+  color: white;
+  line-height: 2px;
+ 
+}
+
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+/* * * * * A little more more about you.... * * * * */
+
+h2 {
+  margin-top: 10%;
+  font-size: 22px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 18px;
+  color: white;
+}
+
+fieldset{
+  border: none;
+}
+
+
+
+.col-left,
+.col-right {
+  width: 50%;
+  padding: 45px 35px;
+  display: flex;
+}
+
+/* * * * * coté gauche (bleu) * * * * */
+.col-left {
+ width: 40%;
+ background: #4A00E0;
+}
+
+
+/* * * * * SEND * * * * */
+
+a {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 1%;
+  width: 8rem;
+}
+
+
+a:hover {
+  color: #FC6C5F;
+}
+
+
+/*responsive (mobile) */
+@media(max-width: 1175.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+
+
+/*Helps us to know.. */
+h3{
+  color: black;
+  margin-top:7%; 
+  text-align: center;
+}
+
+
+
+/*Education */
+h4{
+  float: left;
+  font-size: 12px;
+  color: black;
+  margin-top: 30%;
+  margin-left: -32%;
+}
+
+
+
+
+/*quiz*/
+.quiz {
+  padding: 0 100px 80px 100px;
+  max-width: 1360px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.quiz ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-question {
+  font-weight: bold;
+  display: block;
+  padding: 30px 0 10px 0;
+  margin: 0;
+  color: black;
+  font-size: 12px;
+  float: center;
+}
+
+.quiz-answer {
+  margin: 0;
+  padding: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 11px;
+  float: center;
+  font-weight: lighter;
+}
+
+.quiz-answer:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+  float: center;
+}
+
+
+input[type=checkbox]:checked {
+   background: #FC6C5F !important;
+} 
+
+
+label{
+  font-size: 11px;
+}
+
+
+/*1 - 2 - 3*/
+#progressbar {
+  margin-bottom: 12px;
+  overflow: hidden;
+  /*counters to number the steps*/
+  counter-reset: step;
+
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 4.5rem;
+  float: left;
+  position: relative;
+  width: 32%;
+  margin-top: 3%;
+
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 3rem;
+  line-height: 3rem;
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  border-radius: 10rem;
+  margin: 0 auto 5px auto;
+  margin-top: -8%;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 6rem;
+  height: 0.2rem;
+  background: #F4F4F4;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+  
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+
+
+}
+
+/*The number of the step and the connector*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #FC6C5F;
+  color: white;
+  text-align: center;
+
+}
+
+
+
