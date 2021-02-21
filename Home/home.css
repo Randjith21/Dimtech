@@ -1,0 +1,234 @@
+/* * * * * General CSS * * * * */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+
+/* * * * * Dimtech * * * * */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: black;
+  line-height: 2px;
+}
+
+h2 {
+  margin-top: 4%;
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+
+}
+
+
+
+
+/* * * * * Sign-in * * * * */
+
+h3{
+  color: white;
+  margin-top:10%; 
+}
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 18px;
+  color: black;
+}
+
+
+
+.col-left,
+.col-right {
+  width: 50%;
+  padding: 45px 35px;
+  display: flex;
+
+
+  
+}
+
+.col-right {
+  width: 50%;
+ background: #4A00E0;
+  
+}
+
+
+
+
+/* * * * * LEARN MORE * * * * */
+.toggle-log {
+  font-size: 0.8rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #FFFFFF;
+  color: white;
+  border-radius: 2rem;
+  transition: 200ms;
+  background: #FC6C5F;
+}
+
+.toggle-log:focus {
+  border: 2px solid #FFFFFF;
+  outline: none;
+}
+
+
+
+/* * * * * E-mail, password * * * * */
+.input-text {
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  background: #4e598c2b;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Poppins-Regular;
+  color: #fff;
+  width: 61%;
+  height: 45px;
+  background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+   position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 30px;
+}
+
+/* * * * * LOGIN * * * * */
+
+button {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  border: 1px solid #4E598C;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 1%;
+  width: 8rem;
+
+}
+button:hover {
+  background: #FFFFFF;
+  color: #FC6C5F;
+}
+
+
+
+
+
+/* * * * * Keep me logged * * * * */
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: white;
+    width: 2%;
+    height: 2%;
+}
+
+
+
+/*responsive en mobile*/
+@media(max-width: 1175.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+
+
+/*Sign-in (champs, bouton)*/
+.login-text {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.login-form {
+  position: relative;
+  width: 100%;
+  color: #666666;
+}
+
+.login-form p:last-child {
+  margin: 0;
+}
+
+.login-form p a {
+  color: #4CAF50;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-form p:last-child a:last-child {
+  float: right;
+}
+
+
+
+
+/* * * * * E-mail, password * * * * */
+.input-text {
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  background: #4e598c2b;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Poppins-Regular;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+   position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 30px;
+}
