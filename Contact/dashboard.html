@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Dashboard</title>
+<meta name="viewpoint" content="width=device-width initial scale=1">
+
+<!--Dashboard-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--font-awesome-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--icon other service-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--icon portfolio-->
+ <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2 w3-animate-left" style="width=200px; background-color: #0434BA;" id="practice">
+          <h1>Dimtech</h1>
+     <p  style="margin-top: -0.6%; margin-bottom: 5%; font-size: 0.4rem; color: white;">The Power of Dimensional Technologies</p>
+
+                <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()" style="color: white;">Close &times;</button>
+                <a href="#" class="w3-bar-item w3-button w3-mobile" style="color: white;">
+                 <i class="fa fa-th-large" style="margin-right: 5%;"></i>Dashboard</a>
+
+
+                <a href="#" class="w3-bar-item w3-button w3-mobile" style="color: white;">
+                  <i class="fa fa-folder" style="margin-right: 5%;"></i>Portfolio</a>
+
+                <a href="#" class="w3-bar-item w3-button w3-mobile" style="color: white;">
+                  <i class="fa fa-handshake-o" style="margin-right: 5%;"></i>Other services</a>
+               
+
+                <a href="#" class="w3-bar-item w3-button w3-mobile" style="color: white;">
+                  <i class="fa fa-cog" style="margin-right: 5%;"></i>Settings </a>
+
+                <a href="contact.html" class="w3-bar-item w3-button w3-mobile" style="color: white;">
+                  <i class="fa fa-bullhorn" style="margin-right: 5%;"></i>Contact</a>
+                
+        </div>
+        <div class="w3-main" style="margin-left:200px;">
+            <div class="w3">
+                    <button class="w3-button w3 w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+                 
+            </div>
+            <div class="w3-container">
+                <h2>Any question ?</h2>  
+                <br> <br> <br>
+                <p>If you have any question about how Dimtech works, of if you just want</p> 
+                <p>to know more about what we offer, feel free to fill the form bellow,</p> 
+                <p>we will get back to you as as possible.</p>
+            </div>
+        </div>    
+        <script>
+            function w3_open() {document.getElementById("practice").style.display="block";}
+            function w3_close() {document.getElementById("practice").style.display="none"}
+        </script>
+</body>
+</html>

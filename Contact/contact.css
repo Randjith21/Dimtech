@@ -1,0 +1,233 @@
+/* * * * * General CSS * * * * */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+
+/* * * * * Dimtech * * * * */
+h1{
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* * * * * Any question ? * * * * */
+h2{
+  margin-top: 1%;
+  font-size: 1.83rem;
+  margin-left: 3%;
+}
+
+h3{
+ float: right;
+  color: white;
+}
+
+/* * * * * menu * * * * */
+.w3{
+  background-color: #0434BA;
+}
+
+/* * * * * menu responsive button * * * * */
+.w3-button{
+  color: white;
+}
+
+
+/* * * * * coté droite * * * * */
+.w3-container{
+  background: white;
+  border: 0 none;
+  border-radius: 1px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 130%;
+  margin: 0 10%;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+
+p{
+  line-height: 6px;
+  font-size: 13px;
+  margin-left: 3%;
+}
+
+
+/*Formulaire de contact*/
+
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+  background-color: #f2f2f2;
+}
+
+label{
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+
+
+.container {
+  /* Ajouter box-sizing */
+  box-sizing : border-box;
+  border-radius:5px;
+  background-color:white;
+  padding:20px;
+  width: 90%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 550px;
+  margin:0 auto;
+}
+
+
+/* SEND */
+input[type=button] {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  border: 1px solid #4E598C;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 1%;
+  width: 8rem;
+  
+}
+
+/* SEND */
+input[type=button]:hover {
+  background: #FFFFFF;
+  color: #FC6C5F;
+  
+}
+
+
+/* Alert */
+#alertBox {
+  position:relative;
+  width:40%;
+  height: 40%;
+  min-height:100px;
+  max-height:400px;
+  margin-top:50px;
+  border:1px solid #fff;
+  background-color:#fff;
+  top:30%;
+}
+
+#modalContainer > #alertBox {
+  position:fixed;
+}
+
+
+/* Thank you! */
+#alertBox p {
+  height:50px;
+  padding-left:5px;
+  padding-top:30px;
+  text-align:center;
+  vertical-align:middle;
+  font-size: 20px;
+}
+
+
+/* Button CLOSE */
+#alertBox #closeBtn {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  border: 1px solid #4E598C;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  width: 8rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Button CLOSE */
+#alertBox #closeBtn:hover {
+  background: #FFFFFF;
+  color: #FC6C5F;
+}
+
+/* unrelated styles */
+#mContainer {
+  position:relative;
+  width:600px;
+  margin:auto;
+  padding:5px;
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+
+}
+
+
+
+
+@media (max-width: 600px) 
+{
+  #alertBox {
+  position:relative;
+  width:90%;
+  top:30%;
+}
+
+
+input[type=button] {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  background: #FC6C5F;
+  border: 1px solid #4E598C;
+  color: #FFFFFF;
+  border-radius: 2rem;
+  transition: 200ms;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 1%;
+  width: 8rem;
+  
+}
+
+input[type=button]:hover {
+  background: #FFFFFF;
+  color: #FC6C5F;
+  
+}
+
+
+
